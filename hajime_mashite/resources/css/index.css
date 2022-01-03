@@ -1,0 +1,9 @@
+#surface{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+}
+
+.card{
+    box-shadow: rgb(0, 0, 0);
+}

@@ -28,15 +28,6 @@
         <div id="picture">
             <img src="img/test.png" alt="" title="学生証">
         </div>
-        <div class="portfolio contents">
-            <ul>
-                <lh>portfolio</lh>
-                <li>ヒトノオト</li>
-                <li>なりきれ，標識さん！</li>
-                <li>しずのす</li>
-                <p>github→</p>
-            </ul>
-        </div>
         <div class="about contents">
             <ul>
                 <lh>about me</lh>
@@ -46,17 +37,32 @@
                 <p>detail→</p>
             </ul>
         </div>
+        <div class="portfolio contents">
+            <ul>
+                <lh>portfolio</lh>
+                @foreach($data_portfolio as $item)
+                <li class="fukidashi_trigger">{{$item->portfolio_name}}
+                    <span class="fukidashi"><?=$item->portfolio_detail?></span>
+                </li>
+                @endforeach
+                <p>github→</p>
+            </ul>
+        </div>
+
         <div class="skills contents">
             <ul>
                 <lh>skills</lh>
-                <li>HTML&CSS&JavaScript</li>
-                <li>C++,C#</li>
-                <li>PHP</li>
-                <li>Java</li>
+                @foreach($data_skill as $item)
+                <li class="fukidashi_trigger">{{$item->skill_name}}
+                    <span class="fukidashi"><?=$item->skill_detail?></span>
+                </li>
+                @endforeach
 
             </ul>
         </div>
+
         <div class="background"></div>
     </div>
 </body>
+
 </html>

@@ -100,20 +100,37 @@ body {
 
 .portfolio {
     background: #a8dcff;
-    top: 60%;
+    top: 55%;
     left: 70%;
+}
+
+.portfolio .fukidashi {
+    bottom: 140px;
+    right: 80%;
+
 }
 
 .about {
     background: #ffa8a8;
-    top: 80%;
+    top: 75%;
     left: 30%;
+}
+
+.about .fukidashi {
+    top: -35px;
+    left: 60%;
 }
 
 .skills {
     background: #a8ffa8;
     top: 30%;
-    left: 20%;
+    left: 25%;
+}
+
+.skills .fukidashi {
+    top: -15px;
+    left: 85%;
+
 }
 
 ul {
@@ -122,6 +139,11 @@ ul {
 
 lh {
     font-size: 29px;
+    font-weight: 600;
+}
+
+li {
+    display: table;
 }
 
 li:hover {
@@ -129,18 +151,10 @@ li:hover {
     transition: 0.5s;
 }
 
-.fukidashi_trigger {
-    position: relative;
-}
-
-.fukidashi_trigger:hover .fukidashi {
-    display: block;
-}
-
 .fukidashi {
     z-index: 100;
     color: rgb(245, 245, 245);
-    position: absolute;
+    position: fixed;
     display: none;
     padding: 35px;
     border-radius: 45%;
@@ -149,43 +163,39 @@ li:hover {
     font-size: 18px;
 }
 
-.fukidashi::after {
-    content: "";
-    position: absolute;
+.fukidashi_trigger {}
+
+.fukidashi_trigger:hover .fukidashi {
+    animation: fadein 0.5s ease 0s 1 normal;
+    display: block;
 }
 
-.skills .fukidashi{
-    top: -35px;
-    right: -120%;
-
-}
-.skills .fukidashi::after{
-    border-right: 26px solid rgb(62, 62, 62);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    top: 40%;
-    left: -5%;
-
-}
-.portfolio .fukidashi{
-    top: -50px;
-    right: 115%;
-
-}
-.portfolio .fukidashi::after{
-    border-left: 26px solid rgb(62, 62, 62);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    top: 42%;
-    right: -5%;
-
-}
-
-
-.contents p {
+.contents a {
     font-size: 20px;
+    font-weight: 500;
     text-align: right;
     margin: 0 auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.contents a:hover {
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.contents a p {
+    margin: 0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 /* それぞれのコンテンツに関するCSS↑ */
@@ -210,7 +220,16 @@ li:hover {
     text-align: center;
     top: 10px;
     position: relative;
+}
 
+.explain {
+    font-family: 'Merriweather', serif;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    left: 25%;
 }
 
 
@@ -224,15 +243,14 @@ li:hover {
 
 
 
-
-.background {
-    z-index: -100;
-    position: absolute;
-    background: #ffffa8;
-    top: 90%;
-    left: 50%;
-    height: 90%;
-    width: 80%;
-    border-radius: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
+    .background {
+        z-index: -100;
+        position: absolute;
+        background: #ffffa8;
+        top: 90%;
+        left: 50%;
+        height: 90%;
+        width: 80%;
+        border-radius: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }

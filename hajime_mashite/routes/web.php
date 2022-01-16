@@ -18,3 +18,5 @@ Route::get('/laravel', function () {
 });
 
 Route::get('/', 'App\Http\Controllers\IndexController@index');
+
+route::get('/detail','App\Http\Controllers\IndexController@detail');

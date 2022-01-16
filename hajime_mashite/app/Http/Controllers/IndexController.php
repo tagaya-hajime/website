@@ -20,5 +20,12 @@ class IndexController extends Controller
         return view('index', compact('data_skill','data_portfolio','data_about'));
         
     }
+    public function detail(){
+        return view('detail');
+    }
+
+    public function content(){
+        return view('content');
+    }
 }
 

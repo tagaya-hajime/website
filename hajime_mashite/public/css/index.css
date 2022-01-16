@@ -1,83 +1,17 @@
-body {
+html{
     overflow: hidden;
 }
-
-#surface {
-    z-index: 999;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(240, 240, 240);
-
-}
-
-#card, #picture {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
-
-
-#card img {
-    width: 200px;
-    box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
-}
-
-.click {
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    margin: 0;
-}
-
-.arrow {
-    margin: 0 auto;
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
-
-.arrow span {
-    height: 1px;
-    width: 14px;
-    background: rgb(0, 0, 0);
-}
-
-.arrow span:first-child {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 25%;
-    bottom: 35%;
-}
-
-.arrow span:nth-child(2) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 45%;
-    bottom: 35%;
-}
-
-.arrow span:nth-child(3) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 25%;
-    bottom: 54%;
-}
-
-.arrow span:nth-child(4) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 45%;
-    bottom: 54%;
-}
-
-
+@media (max-width: 768px) {
+    :root {
+      font-size: 15px;
+      min-height: 0vw;
+    }
+  }
+  @media (min-width: 769px) {
+    :root {
+      font-size: 22px;
+    }
+  }
 
 .erase {
     opacity: 0;
@@ -93,7 +27,7 @@ body {
     position: absolute;
     transform: translateY(-50%) translateX(-50%);
     padding: 20px;
-    font-size: 25px;
+    font-size: 1.2rem;
     font-family: 'Kiwi Maru', serif;
     white-space: nowrap;
 }
@@ -112,7 +46,7 @@ body {
 
 .about {
     background: #ffa8a8;
-    top: 75%;
+    top: 80%;
     left: 30%;
 }
 
@@ -138,7 +72,7 @@ ul {
 }
 
 lh {
-    font-size: 29px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -147,7 +81,7 @@ li {
 }
 
 li:hover {
-    font-size: 28px;
+    font-size: 1.05em;
     transition: 0.5s;
 }
 
@@ -163,15 +97,13 @@ li:hover {
     font-size: 18px;
 }
 
-.fukidashi_trigger {}
-
 .fukidashi_trigger:hover .fukidashi {
     animation: fadein 0.5s ease 0s 1 normal;
     display: block;
 }
 
 .contents a {
-    font-size: 20px;
+    font-size: 0.8em;
     font-weight: 500;
     text-align: right;
     margin: 0 auto;
@@ -200,11 +132,6 @@ li:hover {
 
 /* それぞれのコンテンツに関するCSS↑ */
 
-
-
-
-
-
 #picture {
     position: absolute;
     top: 50%;
@@ -229,28 +156,20 @@ li:hover {
     letter-spacing: 1px;
     text-align: center;
     position: relative;
-    left: 25%;
+    left: 13%;
 }
 
+.background {
+    z-index: -100;
+    position: absolute;
+    background: #ffffa8;
+    top: 90%;
+    left: 50%;
+    height: 90%;
+    max-width: 960px;
+    min-width: 500px;
+    width: 80%;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 
-
-
-
-
-
-
-
-
-
-
-    .background {
-        z-index: -100;
-        position: absolute;
-        background: #ffffa8;
-        top: 90%;
-        left: 50%;
-        height: 90%;
-        width: 80%;
-        border-radius: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }

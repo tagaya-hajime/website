@@ -63,7 +63,7 @@
                 </li>
                 @endforeach
                 <a href="/detail" target="_blank" rel="noopener noreferrer">
-                    <p>details→</p>
+                    <p class ="fukidashi_trigger">details→<span class="fukidashi">クリックしてもっと多賀谷のことを知ってください！</span></p>
                 </a>
             </ul>
         </div>

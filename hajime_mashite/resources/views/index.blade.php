@@ -28,7 +28,7 @@
         <h1 class="title">Thanks for visiting my page!</h1>
         <p class="explain">please mouse over the content...</p>
         <div id="picture">
-            <img src="img/test.png" alt="" title="学生証">
+            <img src="img/yeah.jpg" alt="" title="学生証">
         </div>
         <div class="skills contents">
             <ul>

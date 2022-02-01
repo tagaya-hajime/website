@@ -1,0 +1,26 @@
+#main{
+    font-size: 20px;
+}
+.background {
+    z-index: -100;
+    position: absolute;
+    background: #ffffa8;
+    top: 90%;
+    left: 50%;
+    height: 90%;
+    max-width: 960px;
+    min-width: 500px;
+    width: 80%;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+span{
+    transition: all ease 0.3s;
+
+}
+span:hover{
+    color: red;
+    
+
+}

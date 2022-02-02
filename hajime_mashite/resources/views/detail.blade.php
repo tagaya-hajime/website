@@ -62,7 +62,7 @@
             <div class="row border-bottom"></div>
 
             <div id="item-1-2" class="row p-3 slideConts">
-                <div class="col-md-4   text-center"><img src="img/high.jpg" class="w-50 h-auto"></div>
+                <div class="col-md-4   text-center"><img src="img/high.jpg" class="w-75 h-auto" loading=”lazy”></div>
                 <div class="col-md-8">
                     <h3>高校生</h3>
                     <p>
@@ -83,7 +83,7 @@
             <div class="row border-bottom"></div>
 
             <div id="item-1-3" class="row p-3 slideConts">
-                <div class="col-md-4   text-center"><img src="img/univ.jpg" class="w-50 h-auto"></div>
+                <div class="col-md-4   text-center"><img src="img/univ.jpg" class="w-75 h-auto" loading=”lazy”></div>
                 <div class="col-md-8">
                     <h3>大学生</h3>
                     <p>

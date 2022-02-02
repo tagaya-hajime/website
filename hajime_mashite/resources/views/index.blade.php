@@ -12,9 +12,13 @@
 </head>
 
 <body>
-    <div id="surface">
+    @if($detail==true)
+        <div id="surface" class="erase">
+    @else
+        <div id="surface">
+    @endif
         <div id="card">
-            <img src="img/me.jpg" alt="" title="学生証">
+            <img src="img/me.jpg">
             <div class="arrow">
                 <span></span>
                 <span></span>
@@ -24,11 +28,15 @@
             <p class="click">click me</p>
         </div>
     </div>
-    <div id="main" class="erase">
+    @if($detail==true)
+        <div id="main">
+    @else
+        <div id="main" class="erase">
+    @endif
         <h1 class="title">Thanks for visiting my page!</h1>
         <p class="explain">please mouse over the content...</p>
         <div id="picture">
-            <img src="img/yeah.jpg" alt="" title="学生証">
+            <img src="img/yeah.jpg">
         </div>
         <div class="skills contents">
             <ul>
@@ -62,7 +70,7 @@
                     <span class="fukidashi"><?= $item->about_detail ?></span>
                 </li>
                 @endforeach
-                <a href="/detail" target="_blank" rel="noopener noreferrer">
+                <a href="/detail">
                     <p class ="fukidashi_trigger">details→<span class="fukidashi">クリックしてもっと多賀谷のことを知ってください！</span></p>
                 </a>
             </ul>
